@@ -146,9 +146,86 @@ print(s.replace('one','1',2))  #Hello 1 two three 1 one
 
 ########################join(iterable)
 myList=["Abdullah","Elsaid","Ebrahim"]
-print('-'.join(myList))  #Abdullah-Elsaid-Ebrahim
-print(' '.join(myList))  #Abdullah Elsaid Ebrahim
-print(', '.join(myList)) #Abdullah, Elsaid, Ebrahim
-print(type(', '.join(myList))) #<class 'str'>
+print('-'.join(myList))    
+print(' '.join(myList))   
+print(', '.join(myList))  
+print(type(', '.join(myList)))  
 
-#########################
+######################### Old String Formatting
+name ="Abdullah"
+age =36
+rank= 10
+print("My Name is: "+name)
+print("My Name is: %s"%"Abdullah")
+print("My Name is: %s" % name)
+print("My name is: %s and My Age is: %d"%(name,age))
+print("My name is: %s and My Age is: %d and My rank is: %f"%(name,age,rank))
+# %s => String
+# %d => Number
+# %f => Float
+n="Abdullah"
+l="Python"
+y=10
+print("My Name is %s Iam %s Developer With %d Years Exp" % (n, l, y))
+
+MyNumber=10
+print("My Number is: %d"%MyNumber)
+print("My Number is: %f"%MyNumber)
+print("My Number is: %.2f"%MyNumber)
+# Truncate String
+myLongString = "Hello Peoples of Elzero Web School I Love You All"
+print("Message is %s" % myLongString)
+print("Message is %.5s" % myLongString)
+
+######################### New String Formatting
+name ="Abdullah"
+age =36
+rank= 10
+print("My Name is: "+name)
+print("My Name is: {}".format("Abdullah"))
+print("My Name is: {}".format(name))
+print("My name is: {} and My Age is: {}".format(name,age))
+print("My name is: {:s} and My Age is: {:d} and My rank is: {:f}".format(name,age,rank))
+# {:s} => String
+# {:d} => Number
+# {:f} => Float
+n="Abdullah"
+l="Python"
+y=10
+print("My Name is {:s} Iam {:s} Developer With {:d} Years Exp".format(n, l, y))
+
+MyNumber=10
+print("My Number is: {}".format(MyNumber))
+print("My Number is: {:f}".format(MyNumber))
+print("My Number is: {:.2f}".format(MyNumber))
+
+# Truncate String
+myLongString = "Hello Peoples of Elzero Web School I Love You All"
+print("Message is {:s}".format(myLongString))
+print("Message is {:.5s}".format( myLongString))
+print("Message is {:.13s}".format( myLongString))
+
+# Format Money
+MyMoney=7485934375
+print("My Money Is: {:d}".format(MyMoney))
+print("My Money Is: {:_d}".format(MyMoney))
+print("My Money Is: {:,d}".format(MyMoney))
+
+# ReArrange Items
+a,b,c ="one","Two","Three"
+print("Hi {}{}{}".format(a,b,c))
+print("Hi {1}{2}{0}".format(a,b,c))
+print("Hi {2}{0}{1}".format(a,b,c))
+
+x, y, z = 10, 20, 30
+print("Hello {} {} {}".format(x, y, z))
+print("Hello {1:d} {2:d} {0:d}".format(x, y, z))
+print("Hello {2:f} {0:f} {1:f}".format(x, y, z))
+print("Hello {2:.2f} {0:.4f} {1:.5f}".format(x, y, z))
+
+# Format in Version 3.6+
+myName = "Abdullah"
+myAge = 19
+
+print("My Name is : {myName} and My Age is : {myAge}")
+print(f"My Name is : {myName} and My Age is : {myAge}")
