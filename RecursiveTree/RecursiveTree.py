@@ -13,5 +13,5 @@ def branch(length,level):
     return
 
 left(90)
-branch(100,6)
+branch(100,5)
     
