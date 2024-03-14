@@ -16,12 +16,12 @@ questions = {
 }
 
 for question, correct_answer in questions.items():
-    answer = input(question).lower()
+    answer = input("\n"+question).lower()
     if answer == correct_answer:
-        print('\nCorrect!')
+        print('Correct!')
         score += 1
     else:
-        print("\nIncorrect!")
+        print("Incorrect!")
 
 print("\nYou got " + str(score) + " questions correct!")
 print("Your score is " + str((score / len(questions)) * 100) + "%.")
