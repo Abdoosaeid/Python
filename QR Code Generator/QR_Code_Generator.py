@@ -9,3 +9,5 @@ Qr = pyqrcode.create(link)
 
 Qr.svg(f"{name}.svg", scale = 12)
 
+print(f"Your Qr code in {name}.svg file.")
+
