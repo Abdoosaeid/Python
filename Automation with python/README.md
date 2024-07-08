@@ -23,8 +23,6 @@ The project involves the following steps:
 3. Run the script:
 ```bash
 python app.py
-
-
-
+```
 ## Source 
 [Python Tutorial - Python Full Course for Beginners](https://www.youtube.com/watch?v=_uQrJ0TkZlc)
