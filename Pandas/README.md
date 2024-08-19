@@ -180,3 +180,215 @@ print(a.symmetric_difference(b))  # Symmetric difference of a and b
 ```python
 
 ```
+# Data visualization
+
+
+```python
+import pandas as pd 
+data = pd.Series((3,6,9,8,5,4,2,6,3,5,8))
+
+data.plot()
+#data.plot(kind='line')
+```
+
+
+
+
+    <Axes: >
+
+
+
+
+    
+![png](output_1_1.png)
+    
+
+
+X --> Keys
+
+Y --> values
+
+
+```python
+data.plot(kind='pie')
+```
+
+
+
+
+    <Axes: >
+
+
+
+
+    
+![png](output_3_1.png)
+    
+
+
+
+```python
+data.plot(kind='bar')
+```
+
+
+
+
+    <Axes: >
+
+
+
+
+    
+![png](output_4_1.png)
+    
+
+
+
+```python
+data.plot(kind='barh')
+```
+
+
+
+
+    <Axes: >
+
+
+
+
+    
+![png](output_5_1.png)
+    
+
+
+
+```python
+data.plot(kind='hist')
+```
+
+
+
+
+    <Axes: ylabel='Frequency'>
+
+
+
+
+    
+![png](output_6_1.png)
+    
+
+
+
+```python
+data = pd.Series((3,6,9,8,5,4,2,6,3,5,8))
+data.plot(kind='box')
+```
+
+
+
+
+    <Axes: >
+
+
+
+
+    
+![png](output_7_1.png)
+    
+
+
+
+```python
+data = pd.Series((1,2,9,8,10,11,12,12,14,15,18))
+data.plot(kind='box')
+```
+
+
+
+
+    <Axes: >
+
+
+
+
+    
+![png](output_8_1.png)
+    
+
+
+
+```python
+data = pd.Series((1,2,3,4,5,6,7,1,18,20,28))
+data.plot(kind='box')
+```
+
+
+
+
+    <Axes: >
+
+
+
+
+    
+![png](output_9_1.png)
+    
+
+
+
+```python
+data = pd.Series((3,6,9,8,5,4,2,6,3,5,8))
+data.plot(kind='kde')
+```
+
+
+
+
+    <Axes: ylabel='Density'>
+
+
+
+
+    
+![png](output_10_1.png)
+    
+
+
+
+```python
+data = pd.Series((3,6,9,8,5,4,2,6,3,5,8))
+data.plot(kind='density')
+```
+
+
+
+
+    <Axes: ylabel='Density'>
+
+
+
+
+    
+![png](output_11_1.png)
+    
+
+
+
+```python
+data.plot(kind='area')
+```
+
+
+
+
+    <Axes: >
+
+
+
+
+    
+![png](output_12_1.png)
+    
+
