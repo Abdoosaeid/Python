@@ -10,7 +10,9 @@ def merge_pdfs_in_folder(folder_path, output_filename):
 
     # Sort the PDF files
     pdf_files.sort()
-
+   
+    for i in pdf_files:
+        print(i)
     # Loop through the list of PDFs and append them to the merger object
     for pdf in pdf_files:
         pdf_path = os.path.join(folder_path, pdf)
@@ -22,3 +24,9 @@ def merge_pdfs_in_folder(folder_path, output_filename):
         pdf_merger.write(output_file)
 
     print(f"Merged {len(pdf_files)} PDFs from {folder_path} into {output_filename}")
+
+
+folder_path = "D:\output\input"  # Folder containing PDFs
+output_pdf = "D:\output\l1.pdf"  # Output PDF filename
+
+merge_pdfs_in_folder(folder_path, output_pdf)
